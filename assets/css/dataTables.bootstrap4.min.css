@@ -1,0 +1,40 @@
+/* Estilos generales de la tabla DataTable */
+table.dataTable {
+    clear:both; /* Limpia los flotadores */
+    margin-top:6px !important; /* Márgen superior */
+    margin-bottom:6px !important; /* Márgen inferior */
+    max-width:none !important; /* Ancho máximo */
+    border-collapse:separate !important; /* Colapsa los bordes de la tabla */
+    border-spacing:0; /* Espaciado entre celdas */
+}
+
+/* Estilos para las celdas de la tabla */
+table.dataTable td,
+table.dataTable th {
+    -webkit-box-sizing:content-box; /* Tamaño de la caja para compatibilidad con Webkit */
+    box-sizing:content-box; /* Tamaño de la caja */
+}
+
+/* Estilos para las celdas vacías */
+table.dataTable td.dataTables_empty,
+table.dataTable th.dataTables_empty {
+    text-align:center; /* Alineación del texto al centro */
+}
+
+/* Estilos para el filtro de búsqueda */
+div.dataTables_wrapper div.dataTables_filter {
+    text-align:right; /* Alineación del filtro al lado derecho */
+}
+
+/* Estilos para la información de paginación */
+div.dataTables_wrapper div.dataTables_info {
+    padding-top:0.85em; /* Espaciado superior */
+    white-space:nowrap; /* No se permiten saltos de línea */
+}
+
+/* Estilos para la paginación */
+div.dataTables_wrapper div.dataTables_paginate {
+    margin:0; /* Márgen */
+    white-space:nowrap; /* No se permiten saltos de línea */
+    text-align:right; /* Alineación a la derecha */
+}

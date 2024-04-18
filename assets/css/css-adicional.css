@@ -1,0 +1,28 @@
+/* Contenedor del video */
+.video-container {
+    position: relative; /* Establece el posicionamiento relativo para posicionar los elementos hijos */
+    width: 100%; /* Ancho del contenedor */
+    height: 0; /* Altura inicial del contenedor, se ajustará con el padding-bottom */
+    padding-bottom: 56.25%; /* Proporción 16:9 (para videos) */
+    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+}
+
+/* Estilos del video */
+.background-video {
+    position: absolute; /* Establece el posicionamiento absoluto para que el video se superponga a otros elementos */
+    top: 0; /* Alinea el video con la parte superior del contenedor */
+    left: 0; /* Alinea el video con el borde izquierdo del contenedor */
+    width: 100%; /* Ancho del video igual al ancho del contenedor */
+    height: 100%; /* Altura del video igual a la altura del contenedor */
+    z-index: -1; /* Sitúa el video detrás de otros elementos */
+    opacity: 0.1; /* Establece la opacidad del video al 10% (ligeramente transparente) */
+}
+
+/* Estilos del contenido superpuesto */
+.content {
+    position: absolute; /* Establece el posicionamiento absoluto para posicionar el contenido superpuesto */
+    top: 20px; /* Ajusta la posición vertical del contenido */
+    left: 20px; /* Ajusta la posición horizontal del contenido */
+    color: white; /* Color del texto */
+    z-index: 1; /* Sitúa el contenido por encima del video */
+}
